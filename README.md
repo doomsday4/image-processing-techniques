@@ -11,3 +11,11 @@ Course Assignment
 6. The top_left, top_right, bottom_left and bottom_right corners are selected based on the linear distance of the four vertices of the quadrilateral found.
 7. Based on these, the correct orientation of the flag is found using the colours of the flag.
 8. We can then generate a flag with the correct orientation based on this information.
+
+## Audio Classification
+1. The audio path is given as an input to the function.
+2. The wave_form and samp_rate is found out using the librosa library.
+3. I then used the mel-spectrogram technique to get the power of the audio.
+4. This is then converted to decibles.
+5. The spectrogram image is saved and then read to generate the edges in the image.
+6. Based on a threshold, it is decided if the audio is 'metal' or 'cardboard'.
